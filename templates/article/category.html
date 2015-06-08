@@ -125,7 +125,7 @@
 <script>
     $(function(){
         TableEditable.init();
-
+        // 验证类别名称是否可用
         $("input[name='textCategoryName']").on('input', function(e){
             var name = $(this).val();
             name = $.trim(name);
@@ -144,7 +144,7 @@
                 }, 'json')
             }
         });
-
+        // 类别输入框失去焦点的时候的处理
         $("input[name='textCategoryName']").blur(function(e){
             var name = $(this).val();
             name = $.trim(name);
@@ -152,7 +152,7 @@
                 $('.ro-tips').html("");
             }
         });
-
+        // 左侧menu的选中状态
         $('li').siblings('.menu').each(function() {
             var index = $(this).index();
             if(index == 5){

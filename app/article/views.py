@@ -9,7 +9,7 @@ from utils.mongodbutil import get_db
 
 def index(request):
     # return HttpResponse('Hello')
-    return render(request, 'article/base.html')
+    return render(request, 'article/../../templates/base.html')
 
 
 def category(request):
