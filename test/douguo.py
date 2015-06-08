@@ -109,5 +109,5 @@ if __name__ == '__main__':
             page += 1
             db.c_category.update({'_id': result['_id']}, {'$set': {'page': page}})
             print('解析结束...')
-            time.sleep(10)
             print('sleep...')
+            time.sleep(10)

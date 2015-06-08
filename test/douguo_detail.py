@@ -23,12 +23,23 @@ def parser_detail(content):
     # 描述
     desc = fullStory.contents[0].strip()
     print(desc)
-    mtim = soup.find('tr', class_='mtim')
-    # print(mtim.contents)
-    tds = 0
-    print(mtim.find_all('td')[0])
-    for td in mtim.find_all('td'):
-        print(td.contents[-1].strip())
+    table = soup.find('table', class_='retamr')
+    tr = table.find_all('tr', class_='mtim')
+    size = len(tr)
+    tr0 = tr[0].find_all('td')
+    difficulty = tr0[0].contents[-1].strip()
+    time = tr0[1].contents[-1].strip()
+    print(difficulty)
+    print(time)
+
+    tr1 = tr[1].find_next_sibling()
+    print(tr1)
+    # for tr in soup.find_all('tr', class_='mtim'):
+    #     tds = mtim.find_all('td')
+    #     difficulty = tds[0].contents[-1].strip()
+    #     time = tds[1].contents[-1].strip()
+    #     print(difficulty)
+    #     print(time)
 
 
 if __name__ == '__main__':
