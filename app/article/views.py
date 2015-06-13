@@ -18,6 +18,10 @@ def category(request):
     return render(request, 'article/category.html', locals())
 
 
+def publish(request):
+    return render(request, 'article/publish.html', locals())
+
+
 @csrf_exempt
 def add_category(request):
     category_name = request.POST.get('textCategoryName', None)

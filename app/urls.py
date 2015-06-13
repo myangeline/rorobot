@@ -9,4 +9,5 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'article/', include('app.article.urls', namespace='article')),
     url(r'login/', include('app.login.urls', namespace='login')),
+    url(r'setup/', include('app.setup.urls', namespace='setup')),
 ]

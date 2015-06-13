@@ -29,9 +29,8 @@
             <div class="container-fluid">
                 <!-- BEGIN LOGO -->
 
-                <a class="brand" href="#"> <img
-                    src="{% static 'media/image/logo.png' %}" alt="logo" />
-
+                <a class="brand" href="#">
+                    <img src="{% static 'media/image/logo.png' %}" alt="logo" />
                 </a>
 
                 <!-- END LOGO -->
@@ -39,9 +38,8 @@
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
 
                 <a href="javascript:void(0)" class="btn-navbar collapsed"
-                    data-toggle="collapse" data-target=".nav-collapse"> <img
-                    src="{% static 'media/image/menu-toggler.png' %}" />
-
+                    data-toggle="collapse" data-target=".nav-collapse">
+                    <img src="{% static 'media/image/menu-toggler.png' %}" />
                 </a>
 
                 <!-- END RESPONSIVE MENU TOGGLER -->
@@ -139,7 +137,7 @@
 
 					<ul class="sub-menu" style="display: none;">
 						<li>
-							<a href="">发表文章</a>
+							<a href="/admin/article/publish/">发表文章</a>
 						</li>
 						<li>
                             <a href="">管理文章</a>
@@ -171,16 +169,16 @@
 
                 <li class="menu">
 					<a href="#">
-						<i class="icon-cog"></i>
+						<i class="icon-cogs"></i>
 						<span class="title">设置</span>
                         <span class="arrow"></span>
 					</a>
                     <ul class="sub-menu" style="display: none;">
 						<li>
-							<a href="">站点设置</a>
+							<a href="/admin/setup/website/">站点设置</a>
 						</li>
 						<li>
-                            <a href="">个人设置</a>
+                            <a href="/admin/setup/personal/">个人设置</a>
 						</li>
 					</ul>
 				</li>

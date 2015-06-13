@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+个人设置
+{% endblock %}
+
+{% block page-title %}
+个人设置
+{% endblock %}
+
+{% block breadcrumb %}
+    <li>
+        <a href="javascript:void(0)">设置</a>
+        <i class="icon-angle-right"></i>
+    </li>
+    <li>
+        <a href="javascript:void(0)">个人设置</a>
+    </li>
+{% endblock %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block dashboard %}
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="portlet box light-grey">
+
+                <div class="portlet-title">
+
+                    <div class="caption"><i class="icon-cog"></i>个人设置</div>
+
+                    <div class="tools">
+                        <a href="javascript:void(0)" class="collapse"></a>
+                        <a href="javascript:void(0)" class="reload"></a>
+                    </div>
+
+                </div>
+
+                <div class="portlet-body">
+                    <form action="" method="post" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">昵称</label>
+                            <div class="controls">
+                                <input type="text" name="textNickName" class="span11 m-wrap" placeholder="昵称">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">心情</label>
+                            <div class="controls">
+                                <input type="text" name="textTalk" class="span11 m-wrap" placeholder="说说">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">头像</label>
+                            <div class="controls">
+                                <input type="text" name="textPageSize" class="span11 m-wrap">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">邮箱</label>
+                            <div class="controls">
+                                <input type="text" name="textEmail" class="span11 m-wrap" placeholder="邮箱">
+                            </div>
+                        </div>
+
+                        <div class="controls">
+                            <button type="submit" class="btn blue ro-sub-category" disabled>
+                                <i class="icon-ok"></i>&nbsp;&nbsp;保存
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block script-link %}
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
